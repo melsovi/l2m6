@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_google"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/page_dimens"
+        android:contentDescription="@string/image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginHorizontal="@dimen/page_dimens"
+        android:layout_marginTop="@dimen/long_dimens"
+        android:autofillHints="imageLink"
+        android:background="@drawable/background"
+        android:hint="@string/hint"
+        android:inputType="textUri"
+        android:padding="@dimen/page_dimens"
+        app:layout_constraintTop_toBottomOf="@id/iv_google" />
+
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/long_dimens"
+        android:layout_marginTop="@dimen/page_dimens"
+        android:backgroundTint="@color/black"
+        android:padding="@dimen/small_dimens"
+        android:text="@string/submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_title" />
+
+    <Button
+        android:id="@+id/btn_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/long_dimens"
+        android:layout_marginEnd="@dimen/long_dimens"
+        android:backgroundTint="@color/black"
+        android:padding="@dimen/small_dimens"
+        android:text="@string/random"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_click" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

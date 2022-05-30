@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">l2m6</string>
+    <string name="todo">TODO</string>
+    <string name="toast">Enter text</string>
+    <string name="error">Error</string>
+    <string name="image">image</string>
+    <string name="submit">submit</string>
+    <string name="random">random</string>
+    <string name="hint">Enter text</string>
+</resources>
